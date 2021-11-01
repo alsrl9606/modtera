@@ -1,44 +1,49 @@
 variable "name" {
   type = string
-  default = "cmk"
+ # default = "cmk"
 }
 
 variable "region" {
   type = string
-  default = "ap-northeast-2"
+ // default = "ap-northeast-2"
 }
 
 variable "key" {
   type = string
-  default = "cmk-key"
+ // default = "cmk-key"
 }
 
 variable "cidr_main" {
     type = string
-    default = "10.0.0.0/16"
+  //  default = "10.0.0.0/16"
 }
 
 variable "public_s" {
     type = list
-    default = ["10.0.0.0/24", "10.0.2.0/24"] 
+   // default = ["10.0.0.0/24", "10.0.2.0/24"] 
 }
 
 variable "private_s" {
     type = list
-    default = ["10.0.1.0/24", "10.0.3.0/24"] 
+   // default = ["10.0.1.0/24", "10.0.3.0/24"] 
 }
 
 variable "private_dbs" {
   type = list
-  default = ["10.0.4.0/24","10.0.5.0/24"]
+//  default = ["10.0.4.0/24","10.0.5.0/24"]
+}
+
+variable "private_ip" {
+  type = string
+#  default = "10.0.0.11"
 }
 
 variable "avazone" {
   type = list
-  default = ["a","c"]
+//  default = ["a","c"]
 }
 
 variable "cidr" {
   type = string
-  default = "0.0.0.0/0"
+//  default = "0.0.0.0/0"
 }
